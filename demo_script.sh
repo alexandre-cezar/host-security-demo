@@ -5,7 +5,7 @@ package=freesweep
 if sudo dpkg -l "$package" > /dev/null; then
 	echo "Freesweep already installed"
 else
-	sudo apt-get install -y "$filename"
+	sudo apt-get install -y "$package"
 fi
 
 #Saves the binary md5 in a file (to prove the replacement)
